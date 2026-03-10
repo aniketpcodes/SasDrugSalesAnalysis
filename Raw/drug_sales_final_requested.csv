@@ -1,0 +1,121 @@
+Sale_ID,Region,Product_Name,Sales_Rep,Units_Sold,Unit_Price,Sale_Date,Channel,Discount_Pct
+,East,VitaBoost,,730663.0,4937.93,,Online,5
+1002.0,East,AntiBio-Plus,R103,483775.0,3914.96,03-20-2024,Hospital,
+1003.0,South,VitaBoost,R102,484994.0,1148.34,2024-01-15,hospital ,5
+1004.0,SOUTH,PainRelief-X ,R104,243550.0,3432.64,03-20-2024,Online,5
+1005.0,West,VitaBoost,R103,345634.0,4835.9,2024-01-15,Online,
+1006.0,East,PainRelief-X ,R101,358476.0,1328.92,2024-01-15,hospital ,5
+1007.0,South,PainRelief-X,R102,841425.0,4466.54,2024/04/10,hospital ,5%
+1008.0,East,VitaBoost,,425958.0,4937.93,2024/04/10,Hospital,5%
+1009.0,South,coldcure,R102,791032.0,3324.55,15/02/2024,Hospital,5%
+1010.0,South,ColdCure,R104,443317.0,4578.99,2024-01-15,Hospital,
+1011.0,north ,ColdCure,,421763.0,4589.62,2024/04/10,hospital ,5%
+1012.0,north ,PainRelief-X,,513413.0,4073.85,2024-01-15,Online,0
+1013.0,North,VitaBoost,R103,395964.0,4972.54,03-20-2024,Online,0
+1014.0,East,PainRelief-X ,R102,453752.0,1328.92,2024/04/10,Online,0
+1015.0,West,ColdCure,R101,192340.0,1538.02,03-20-2024,hospital ,10
+,East,PainRelief-X,R103,164092.0,1891.31,2024-01-15,Retail,5
+1017.0,East,coldcure,R103,254363.0,2164.0,15/02/2024,hospital ,
+1018.0,East,PainRelief-X,R104,106374.0,1891.31,,Online,
+1019.0,East,AntiBio-Plus,,358373.0,3914.96,03-20-2024,Online,5%
+1020.0,South,ColdCure,,448657.0,4578.99,,Hospital,5%
+1021.0,West,VitaBoost,R104,711502.0,4835.9,15/02/2024,Online,5%
+1022.0,North,coldcure,R101,219315.0,1258.39,03-20-2024,Hospital,0
+1023.0,West,PainRelief-X ,R101,897772.0,2570.64,2024-01-15,Hospital,
+1024.0,North,AntiBio-Plus,R102,220293.0,4059.53,2024-01-15,hospital ,0
+1025.0,SOUTH,PainRelief-X,R102,734010.0,2722.98,15/02/2024,Online,0
+1026.0,north ,PainRelief-X,R101,354691.0,4073.85,15/02/2024,Hospital,5%
+1027.0,SOUTH,PainRelief-X ,R101,735362.0,3432.64,15/02/2024,Retail,5%
+1028.0,South,coldcure,R104,234607.0,3324.55,2024-01-15,Online,
+1029.0,West,ColdCure,R103,280702.0,1538.02,2024/04/10,Online,
+1030.0,East,VitaBoost,R104,274169.0,4937.93,03-20-2024,Hospital,10
+,East,AntiBio-Plus,R104,269613.0,3914.96,2024-01-15,hospital ,5
+1032.0,North,AntiBio-Plus,R104,272090.0,4059.53,15/02/2024,Online,5
+1033.0,East,VitaBoost,R102,522376.0,4937.93,2024/04/10,Retail,5
+1034.0,North,coldcure,R104,892020.0,1258.39,03-20-2024,Online,0
+1035.0,North,AntiBio-Plus,R103,784700.0,4059.53,2024-01-15,hospital ,5%
+1036.0,East,PainRelief-X,R104,634500.0,1891.31,03-20-2024,hospital ,0
+1037.0,East,PainRelief-X,,765232.0,1891.31,15/02/2024,Hospital,10
+1038.0,north ,PainRelief-X,R104,408391.0,4073.85,2024-01-15,Hospital,
+1039.0,West,AntiBio-Plus,R101,249666.0,2078.82,03-20-2024,Online,
+1040.0,East,coldcure,R103,440946.0,2164.0,,Hospital,0
+1041.0,West,PainRelief-X,,768046.0,2617.87,03-20-2024,hospital ,10
+1042.0,North,PainRelief-X,R104,427644.0,1539.12,,Hospital,10
+1043.0,West,PainRelief-X,,272325.0,2617.87,,Online,10
+1044.0,West,PainRelief-X,R104,450025.0,2617.87,2024-01-15,hospital ,10
+1045.0,South,PainRelief-X,R102,112823.0,4466.54,03-20-2024,hospital ,5
+,East,coldcure,R102,542470.0,2164.0,15/02/2024,Hospital,0
+1047.0,North,PainRelief-X,R103,114930.0,1539.12,15/02/2024,Online,5
+1048.0,East,ColdCure,R101,769971.0,3565.98,15/02/2024,Online,0
+1049.0,West,PainRelief-X ,R104,456028.0,2570.64,03-20-2024,Online,5%
+1050.0,South,ColdCure,R103,754536.0,4578.99,,Hospital,5
+1051.0,South,coldcure,R101,164739.0,3324.55,03-20-2024,hospital ,
+1052.0,North,PainRelief-X ,R104,148978.0,2355.18,,Online,5%
+1053.0,SOUTH,PainRelief-X ,R104,167420.0,3432.64,2024/04/10,hospital ,
+1054.0,South,VitaBoost,R102,728895.0,1148.34,2024-01-15,hospital ,10
+1055.0,West,ColdCure,R102,873707.0,1538.02,,Hospital,0
+1056.0,West,PainRelief-X ,R101,192936.0,2570.64,2024-01-15,Online,5
+1057.0,SOUTH,coldcure,R101,867567.0,2433.08,2024-01-15,hospital ,
+1058.0,East,PainRelief-X ,,830099.0,1328.92,15/02/2024,hospital ,10
+1059.0,north ,coldcure,R101,347752.0,4197.87,,Online,0
+1060.0,SOUTH,coldcure,R104,410706.0,2433.08,15/02/2024,Hospital,
+,East,VitaBoost,R101,798411.0,4937.93,15/02/2024,Hospital,
+1062.0,West,ColdCure,R104,493064.0,1538.02,03-20-2024,Hospital,0
+1063.0,north ,PainRelief-X ,R104,789740.0,4591.74,2024/04/10,hospital ,10
+1064.0,West,VitaBoost,R102,706805.0,4835.9,2024-01-15,Retail,
+1065.0,East,AntiBio-Plus,,892513.0,3914.96,2024-01-15,Retail,5
+1066.0,East,VitaBoost,,651489.0,4937.93,15/02/2024,Retail,10
+1067.0,South,AntiBio-Plus,R101,839360.0,2263.07,15/02/2024,Hospital,5
+1068.0,SOUTH,ColdCure,R103,572860.0,3096.39,15/02/2024,Retail,5
+1069.0,north ,AntiBio-Plus,,340193.0,3823.54,,Retail,0
+1070.0,West,ColdCure,,465224.0,1538.02,2024-01-15,Online,5%
+1071.0,South,PainRelief-X,,747475.0,4466.54,,Online,0
+1072.0,East,PainRelief-X,R101,532636.0,1891.31,2024-01-15,Hospital,
+1073.0,East,AntiBio-Plus,R101,787609.0,3914.96,,Retail,10
+1074.0,West,PainRelief-X,R104,615050.0,2617.87,03-20-2024,Hospital,
+1075.0,north ,AntiBio-Plus,R104,335942.0,3823.54,03-20-2024,Retail,5%
+,north ,PainRelief-X,,140770.0,4073.85,15/02/2024,Online,5
+1077.0,north ,AntiBio-Plus,,613341.0,3823.54,15/02/2024,Online,5%
+1078.0,North,ColdCure,R102,713998.0,3890.96,,Hospital,
+1079.0,South,PainRelief-X,R102,533842.0,4466.54,15/02/2024,Retail,
+1080.0,north ,coldcure,R103,192332.0,4197.87,2024/04/10,Retail,0
+1081.0,north ,VitaBoost,R104,433966.0,1042.58,03-20-2024,Retail,5%
+1082.0,SOUTH,AntiBio-Plus,R102,819452.0,4310.38,03-20-2024,Retail,
+1083.0,South,VitaBoost,R102,725885.0,1148.34,,Online,0
+1084.0,East,PainRelief-X,R103,153193.0,1891.31,2024-01-15,Online,5%
+1085.0,North,PainRelief-X,R101,686462.0,1539.12,15/02/2024,hospital ,
+1086.0,north ,PainRelief-X ,,396861.0,4591.74,03-20-2024,hospital ,
+1087.0,West,AntiBio-Plus,R103,823552.0,2078.82,15/02/2024,Online,0
+1088.0,North,coldcure,R101,851056.0,1258.39,2024-01-15,Online,5%
+1089.0,South,coldcure,R104,111915.0,3324.55,15/02/2024,hospital ,5%
+1090.0,South,ColdCure,R104,451962.0,4578.99,2024/04/10,Retail,0
+,West,AntiBio-Plus,R101,824655.0,2078.82,,hospital ,
+1092.0,West,PainRelief-X ,,830096.0,2570.64,,Hospital,5
+1093.0,East,PainRelief-X ,R101,845460.0,1328.92,15/02/2024,Online,
+1094.0,north ,PainRelief-X,R101,818689.0,4073.85,03-20-2024,Retail,5
+1095.0,East,PainRelief-X,R103,677859.0,1891.31,,Retail,5
+1096.0,North,AntiBio-Plus,R101,363218.0,4059.53,2024-01-15,Retail,
+1097.0,SOUTH,AntiBio-Plus,,511799.0,4310.38,,Hospital,5
+1098.0,East,PainRelief-X,,375412.0,1891.31,2024-01-15,Online,
+1099.0,north ,VitaBoost,R101,613850.0,1042.58,2024/04/10,Online,5
+1100.0,South,ColdCure,R103,795266.0,4578.99,2024/04/10,Retail,5%
+1101.0,north ,coldcure,R103,283996.0,4197.87,,Retail,5
+1102.0,East,AntiBio-Plus,R104,832217.0,3914.96,15/02/2024,Hospital,10
+1103.0,East,ColdCure,R104,313957.0,3565.98,2024/04/10,Hospital,5
+1104.0,East,PainRelief-X,,607839.0,1891.31,15/02/2024,hospital ,0
+1105.0,South,PainRelief-X,R104,873324.0,4466.54,15/02/2024,Hospital,
+,South,PainRelief-X ,R103,604690.0,1400.85,03-20-2024,Online,0
+1107.0,East,AntiBio-Plus,R104,430935.0,3914.96,03-20-2024,hospital ,10
+1108.0,East,PainRelief-X ,R102,532294.0,1328.92,03-20-2024,Online,
+1109.0,north ,ColdCure,R104,597613.0,4589.62,,Hospital,0
+1110.0,north ,PainRelief-X,R104,454916.0,4073.85,2024-01-15,Hospital,5
+1111.0,north ,AntiBio-Plus,R101,296241.0,3823.54,2024-01-15,Hospital,10
+1112.0,East,PainRelief-X ,R101,225506.0,1328.92,2024-01-15,hospital ,0
+1113.0,East,PainRelief-X ,R104,227774.0,1328.92,2024/04/10,Online,5
+1114.0,north ,ColdCure,R103,346601.0,4589.62,03-20-2024,Online,5%
+1115.0,north ,ColdCure,R102,665058.0,4589.62,03-20-2024,Online,0
+1116.0,East,PainRelief-X ,R104,522875.0,1328.92,2024-01-15,Online,5
+1117.0,SOUTH,VitaBoost,R101,583475.0,4476.65,2024/04/10,Retail,5%
+1118.0,South,AntiBio-Plus,R101,554728.0,2263.07,2024/04/10,Online,5
+1119.0,East,PainRelief-X,R104,728835.0,1891.31,2024-01-15,Retail,5%
+1120.0,South,ColdCure,R103,806631.0,4578.99,,Retail,0
