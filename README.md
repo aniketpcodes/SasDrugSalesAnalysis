@@ -37,6 +37,6 @@
 
 ##### Monthly revenue analysis demonstrates fluctuations in sales performance, while correlation analysis confirms that increased units sold strongly influence both revenue and profitability.
 
-##Conclusion
+## Conclusion
 
-This project demonstrates how SAS can be effectively used for business analytics and sales performance evaluation. By applying statistical analysis and visualization techniques, the project provides valuable insights into product demand, regional market performance, and revenue trends, supporting more informed business decisions.
+##### This project demonstrates how SAS can be effectively used for business analytics and sales performance evaluation. By applying statistical analysis and visualization techniques, the project provides valuable insights into product demand, regional market performance, and revenue trends, supporting more informed business decisions.
