@@ -26,8 +26,8 @@ run;
 proc Print data = &Fset &options;
 var &Variables;
 Label &labelopt;
-title "&proctitle";
-footnote "&Footnote";
+title &proctitle;
+footnote &Footnote;
 run;
 %mend;
 
@@ -45,7 +45,7 @@ run;
 %Macro Rupee;
 Proc Format;
 Picture Rupee
-low-high = '00,00,00,00,009'(Prefix=' ₹ '));
+low-high = '00,00,00,00,009'(Prefix=' ₹ ');
  run;
 %mend;
 
@@ -64,5 +64,23 @@ run;
 %mend;
 
 
+/* Macro for Title statemnet for Business analysis */
 
+%macro Title (Tit,Description);
+title j=Center &Tit;
+title2 h=10pt " ";
+title3 j=Center h=8pt color=Black Bold &Description;
+%mend;
+
+/* macro for Sgplot Graph */
+
+%Macro Plotting (data,Topic,Xlabel,Ylabel,title);
+proc sgplot data=&data;
+&Topic;
+	xaxis label= &Xlabel valueattrs=(size=10 weight=bold) labelattrs=(Color=Black weight=Bold size=11 style=Italic);
+	yaxis label= &Ylabel labelattrs=(Color=Black weight=Bold 
+		size=11 style=Italic);
+title &title;
+run;
+%mend;
 

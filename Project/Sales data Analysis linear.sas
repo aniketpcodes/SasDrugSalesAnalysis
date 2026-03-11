@@ -1,5 +1,5 @@
 /* Importing of Dataset */
-Proc import Datafile="/home/u64231588/Raw file/drug_sales_final_requested.csv" 
+Proc import Datafile="/home/u64231588/Raw file/Drug sales Analysis/drug_sales_final_requested.csv" 
 		DBMS=CSV Out=Sales_Data replace;
 	Getnames=Yes;
 	Guessingrows=Max;
@@ -47,20 +47,7 @@ Data Sales_Base(drop=S_ID Region1 PCDT USD Sale_D Channel1 DCT);
 		Discount_Pct=0.05;
 	Format Discount_Pct percent8.2;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 run;
 

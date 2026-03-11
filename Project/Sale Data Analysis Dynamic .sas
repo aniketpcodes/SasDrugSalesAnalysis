@@ -2,7 +2,7 @@
 options sasautos=("/home/u64231588/Macros");
 
 *Importing the File ;
-%Import("/home/u64231588/Raw file/drug_sales_final_requested.csv",CSV,Sale_Data,Yes,Max);
+%Import("/home/u64231588/Raw file/Drug sales Analysis/drug_sales_final_requested.csv",CSV,Sale_Data,Yes,Max);
 
 *Summarisisng;
 %contents(Sale_Data);
@@ -91,17 +91,19 @@ data Sales_Derivation;
 	format Profit Rupee.;
 	Format Profit_Margin percent8.2;
 	Format Unit_Price Rupee.;
+run;
 
 /* Printing the Dataset	 */
 
-%let options = Noobs width=Minimum;
+%let options = %str(Noobs width=Minimum);
+
 %let Variables = Sale_ID Sales_Rep Sale_Date Region Channel Product_Name Cost_Per_Unit 
-		Unit_Price Units_Sold Discount_Pct Revenue Discount_Amt Net_Revenue Profit 
-		Profit_Margin ;
-%LET labelopt= %Str (Sales_Rep = "Sales Represntative Id") ;
-*Inside a macro call, = makes SAS think you are using keyword parameters, 
-while the others are positional parameters.%str is used to protect that;
-%Print(Sales_Derivation,&options,&Variables,&labelopt,"Cleaned dataset",&Sysdate &Systime);
+        Unit_Price Units_Sold Discount_Pct Revenue Discount_Amt Net_Revenue Profit 
+        Profit_Margin ;
+
+%let labelopt = %str(Sales_Rep = "Sales Representative Id");
+
+%Print(Sales_Derivation,&options,&Variables,&labelopt,Cleaned dataset,"&Sysdate &Systime");
 
 Footnote;
 
@@ -119,16 +121,13 @@ becuase we are going to perform diffrent analysis in the same varibale soo it ma
 	*here define indicated which variable we want to define and for what purpose ex : Grouping , Sum , etc;
 	define MeanRev / analysis mean 'Mean Net Revenue' format=Rupee.;
 	*we used analysis in order to explain Sas that treat the variables for Statistical ananlysis not simply display
-
-
-				and for analysis we have to use aliases not the Net_revenue here;
+    *and for analysis we have to use aliases not the Net_revenue here;
 	define SumRev / analysis sum 'Total Revenue per Product' format=Rupee.;
 run;
 
 *2.Frequency  Analysis;
 *Analysis of Total number of Transaction Per Product & Total number of Transaction Per Region by single tabulation Method;
-%Title("Total Number of Transaction analysis Per Product & Per Region",
-"This section analyses Product wise total Number of Transaction Per Product And Total Number of Transaction in every region separately and the highest number of transaction occured for Antibio-Plus");
+%Title("Total Number of Transaction analysis Per Product & Per Region","This section analyses Product wise total Number of Transaction Per Product And Total Number of Transaction in every region separately and the highest number of transaction occured for Antibio-Plus");
 title4  h=10pt " ";
 title5  j=Center h=8pt color=Blue Bold "Frequency= Total Number of Trasaction , Percent= The Percentage of transaction in Total Transaction";
 run;
@@ -150,8 +149,7 @@ proc print data=Sales_Transaction_Product noobs label;
 run;
 
 *Analysis of Total number of Transaction Per Product in Each Region by Cross tabulation Method;
-%Title("Total Number of Transaction analysis Per Product in each region","This section analyses Product wise total Number of Transaction Per Product in each region by Cross tabulation method and
-the highest Transaction has Occured for Painrelief-X in East Region  ");
+%Title("Total Number of Transaction analysis Per Product in each region","This section analyses Product wise total Number of Transaction Per Product in each region by Cross tabulation method and the highest Transaction has Occured for Painrelief-X in East Region");
 title4  h=10pt " ";
 title5  j=Center h=8pt color=Blue Bold "Y-Left=Frequency of Transaction , Y-Right = Regions ,X=Product_Name";
 
@@ -163,8 +161,7 @@ run;
 
 /* Business Based Analyis */
 *3.Top Find the Top Performimg Product by Profit Gained By per Product;
-%Title("Top Performing Product Analysis by Profit","This section Analyses and determines the Top Performing Product in
- Terms of Highest Profit Obtained ");
+%Title("Top Performing Product Analysis by Profit","This section Analyses and determines the Top Performing Product in Terms of Highest Profit Obtained ");
 proc sql;
 	Create table Performance_analysis as select Product_Name, sum(Profit) as 
 		Total_Profit format=Rupee.
@@ -183,8 +180,7 @@ run;
 %Plotting(Performance_analysis,&Type,"Profit Generated","Name of the products", "Top  Profit Generating Product");
 
 *4.Total Net revenue per drug For Finding Top Performing Product;
-%Title("Net Revenue Analysis Per Product","This section Analyses and determines the Top Performing Product in terms of 
-Highest Net Revenue Generation");
+%Title("Net Revenue Analysis Per Product","This section Analyses and determines the Top Performing Product in terms of Highest Net Revenue Generation");
 
 proc sql;
 	Create Table Revenue_analysis as select Product_Name, sum(Net_Revenue) as 
@@ -255,8 +251,7 @@ run;
 
 
 *7.Percent Contribution each region ;
-%Title("Percentage Contribution of Net Revenue Per Region","This section Analyses the percentage Contribution of each Region By total Revenue 
-Generated Product wise by Total Revenue Generated Including all the Region ");
+%Title("Percentage Contribution of Net Revenue Per Region","This section Analyses the percentage Contribution of each Region By total Revenue Generated Product wise by Total Revenue Generated Including all the Region ");
 
 proc sql;
 	Create Table Region_Revenue_analysis as select Region, sum(Net_Revenue) as 
@@ -267,8 +262,8 @@ proc sql;
 quit;
 
 *Here we Used Inner subquery to get the Percentage Contribution of each Region by
-(Net revenue Per Region / total revenue including all regions )*100 
-proc print data= Region_Revenue_analysis noobs;
+(Net revenue Per Region / total revenue including all regions )*100 ;
+
 
 Proc Print Data=Region_Revenue_analysis noobs label;
 Label Total_Revenue ="Total Revenue Generated By each Region"
@@ -322,8 +317,7 @@ run;
 %Plotting(Profit_analysis_Region,&Type,"Region" ,"Net Profit Generated","Top  Profit Generating Region");
 
 *10 Profit analysis by Product wise in Each region ;
-%Title ( "Analysis of Net Profit Per Product Per Region","This section analyses and determines the total Profit obtained by each Product in each region and 
-the Most Profitable Product in each region");
+%Title ( "Analysis of Net Profit Per Product Per Region","This section analyses and determines the total Profit obtained by each Product in each region and the Most Profitable Product in each region");
 
 proc sql;
 	Create Table Profit_analysis_Reg_Pdt as select REgion , Product_Name, 
@@ -339,7 +333,7 @@ Net_Profit = "Total Profit by each product in each region wise";
 run;
 
 /* Visualisation of the same */
-%let Type = %str(hbar Product_Name / group=Region response=Net_Profit groupdisplay=Cluster;);
+%let Type = %str(hbar Product_Name / group=Region response=Net_Profit groupdisplay=Cluster);
 %Plotting(Profit_analysis_Reg_Pdt,&Type,"Net Profit Generated" ,"Name of the Products" , "Analsis of The Profit Generated by Each product in Each Region");
 
 *11 Finding Relation Between Unit_Sold and Profit and Net_Revenue;
@@ -347,8 +341,7 @@ run;
 +1------>	Perfect positive relationship
 0---->	No relationship
 -1----->	Perfect negative relationship;
-%Title("Correlation Analysis Between Units Sold with Net revenue and Profit","This Report Summarises the Relationship between Units of Products Sold with Net Revenue and Units of 
-Products Sold with Profit and gives us the idea about the strong Relationship Between Unit Sold & Net Revenue & Profit");
+%Title("Correlation Analysis Between Units Sold with Net revenue and Profit","This Report Summarises the Relationship between Units of Products Sold with Net Revenue and Units of Products Sold with Profit and gives us the idea about the strong Relationship Between Unit Sold & Net Revenue & Profit");
 
 Proc corr data=Sales_Derivation nomiss nosimple noprob plots=scatter 
 		plots=matrix;
@@ -364,9 +357,7 @@ footnote;
 
 *Finding Relation Between Unit_Sold and Profit region wise;
 *sorting of data by Region for Region analysis;
-%Title("Correlation Analysis Between Units Sold with Net revenue and Profit Region wise ",
-"This Report Summarises the Relationship between Units of Products Sold 
-with Profit in each Region and gives us the idea about the strong Relationship Between Unit Sold  & Profit in each Region");
+%Title("Correlation Analysis Between Units Sold with Net revenue and Profit Region wise ","This Report Summarises the Relationship between Units of Products Sold with Profit in each Region and gives us the idea about the strong Relationship Between Unit Sold  & Profit in each Region");
 Proc sort Data=Sales_Derivation;
 	By Region;
 run;
