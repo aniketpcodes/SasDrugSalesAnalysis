@@ -8,9 +8,6 @@ Guessingrows=&Des2;
 run;
 %mend;
 
-/* i want to Make a macro which can
- read any type of datatype anysheet of the exceldata and any range 
- of the excel data ith Getnames = No / Yes option */
 
 /* Summarisisng Th data */
 %macro contents(Dataset);
@@ -83,4 +80,6 @@ proc sgplot data=&data;
 title &title;
 run;
 %mend;
+
+
 
