@@ -91,13 +91,12 @@
 
 #### Example:
 #### %Plotting(Sales_Data,&Topic,"Product, "Revenue","Revenue by Product");
-#### &Topic refres to the Opertion you want to perform in the Sgplot example : HBAR , VBAR , SCATTER , SERIES , etc.
+#### "&Topic" refres to the Graphs you want to plot in the Sgplot example : HBAR , VBAR , SCATTER , SERIES , etc.
 
 ## Component 2 : Dynamic Sales Analysis Project
 -----------------------------------
 
 ### File: Sale Data Analysis Dynamic.sas
-----------------------------------------
 
 ## Objective
 ---------------------
@@ -163,7 +162,6 @@
 ------------------------------------
 
 ### File: Sales data Analysis linear.sas
-------------------------------------------
 
 ## Objective
 ---------------
