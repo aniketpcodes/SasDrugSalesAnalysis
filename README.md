@@ -40,15 +40,14 @@
 
 ### Project Components
 ----------------------------------
-##### Macro Utility Library (MacroUtility.sas)
-
+## 1.Macro Utility Library (MacroUtility.sas)
 ##### This module contains reusable SAS macros designed to automate common data analysis tasks.
 
-### Purpose
+## Purpose
 -----------------
 ##### To create a centralized macro library that simplifies SAS coding and allows repetitive procedures to be executed dynamically.
 
-##### Available Macros
+### Available Macros
 ---------------------------
 ### 1. Import Macro
 ##### Imports datasets of various file formats.
@@ -93,7 +92,7 @@
 ##### Example:
 ##### %Plotting(Sales_Data, VBAR Product_Name / Response=Revenue,"Product, "Revenue","Revenue by Product");
 
-## Dynamic Sales Analysis Project
+## 2. Dynamic Sales Analysis Project
 -----------------------------------
 
 ### File: Sale Data Analysis Dynamic.sas
@@ -175,7 +174,7 @@
 ##### 2. Profit by Product
 ##### 3. Sales distribution
 
-## Linear Sales Analysis Project
+## 3. Linear Sales Analysis Project
 -------------------------------------
 
 ### File: Sales data Analysis linear.sas
