@@ -2,7 +2,7 @@
  
 ## Sales Data Analysis Using SAS
 
-##### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical handling of missing values, and visualization.
+##### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical ##### handling of missing values, and visualization.
 
 ###### The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across ##### different products and sales channels.
 
@@ -43,7 +43,7 @@
 ### Project Components
 
 
-##### 1. Macro Utility Library (MacroUtility.sas)
+##### Macro Utility Library (MacroUtility.sas)
 
 ##### This module contains reusable SAS macros designed to automate common data analysis tasks.
 
