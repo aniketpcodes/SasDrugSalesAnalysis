@@ -28,7 +28,6 @@
 
 ## Tools & Technologies Used
 ---------------------------------
-##### SAS Macros		:-		       Automation and reusable code
 ##### PROC IMPORT		:-		      Import raw datasets
 ##### PROC CONTENTS		:-		    Inspect dataset structure
 ##### PROC SORT		:-		        Sort datasets
@@ -40,7 +39,7 @@
 
 ### Project Components
 ----------------------------------
-## 1.Macro Utility Library (MacroUtility.sas)
+## 1. Macro Utility Library (MacroUtility.sas)
 ##### This module contains reusable SAS macros designed to automate common data analysis tasks.
 
 ## Purpose
