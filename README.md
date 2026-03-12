@@ -1,21 +1,22 @@
 # Project Summary 
+------------------
  
 ## Sales Data Analysis Using SAS
+----------------------------------
 
 ##### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical ##### handling of missing values, and visualization.
 ##### The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across ##### different products and sales channels.
 
 ### Two different approaches were implemented:
 ----------------------------------------------
-
 ##### 1.Linear Programming Approach
 
 ##### 2.Dynamic Macro-Driven Approach
 
-##### The macro-driven approach improves automation, reusability, and efficiency by allowing repetitive analytical tasks to be executed using parameterized macros.
+#### The macro-driven approach improves automation, reusability, and efficiency by allowing repetitive analytical tasks to be executed using parameterized macros.
 
 #### The analysis pipeline includes:
-
+-------------------------------------
 ##### 1.Importing raw CSV sales data
 ##### 2.Cleaning and standardizing inconsistent data
 ##### 3.Handling missing values using statistical methods
@@ -23,11 +24,10 @@
 ##### 5.orting and organizing datasets
 ##### 6.Generating business summaries
 ##### 7.Producing graphical visualizations using PROC SGPLOT
+#### Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
 
-##### Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
-
-### <u>Tools & Technologies Used</u>
-
+### Tools & Technologies Used
+---------------------------------
 ### Tool							            Purpose
 ##### SAS Programming			   Core data processing and analysis
 ##### SAS Macros				       Automation and reusable code
@@ -41,18 +41,17 @@
 
 
 ### Project Components
-
-
+----------------------------------
 ##### Macro Utility Library (MacroUtility.sas)
 
 ##### This module contains reusable SAS macros designed to automate common data analysis tasks.
 
 ### Purpose
-
+-----------------
 ##### To create a centralized macro library that simplifies SAS coding and allows repetitive procedures to be executed dynamically.
 
 ##### Available Macros
-
+---------------------------
 ### 1. Import Macro
 
 ##### Imports datasets of various file formats.
@@ -97,16 +96,18 @@
 ##### Example:
 ##### %Plotting(Sales_Data, VBAR Product_Name / Response=Revenue,"Product, "Revenue","Revenue by Product");
 
-##### 2. Dynamic Sales Analysis Project
+### Dynamic Sales Analysis Project
+-----------------------------------
 
 ### File: Sale Data Analysis Dynamic.sas
+----------------------------------------
 
 ### Objective
-
+---------------------
 ##### To perform sales analysis using automated macros for better scalability and reusability.
 
 ### Workflow
-
+-------------- 
 #### Step 1: Macro Library Connection
 
 #### options sasautos=("/home/.../Macros");
@@ -129,23 +130,21 @@
 
 ##### Key cleaning steps:
 
-##### 1.Standardized text using PROPERCASE
+##### i.Standardized text using PROPERCASE
 
-##### 2.Created new sequential Sale_ID
+##### ii.Created new sequential Sale_ID
 
-##### 3.Converted character variables to numeric
+##### iii.Converted character variables to numeric
 
-##### 4.Converted date formats
+##### iv.Converted date formats
 
-##### 5.Replaced missing Sales Rep with "Unknown"
+##### v.Replaced missing Sales Rep with "Unknown"
 
-##### 6.Standardized discount values
+##### vi.Standardized discount values
 
+##### Vii.Sorting required before statistical processing.
 
-
-### Sorting required before statistical processing.
-
-#### Step 5: Missing Value Treatment
+##### Step 5: Missing Value Treatment
 
 ##### Using median replacement:
 
@@ -167,32 +166,30 @@
 
 ##### Example formula:
 
-##### Revenue = Units_Sold × Unit_Price
-##### Net Revenue = Revenue − Discount Amount
-##### Profit = Net Revenue − Cost
+##### i.Revenue = Units_Sold × Unit_Price
+##### ii.Net Revenue = Revenue − Discount Amount
+##### iii.Profit = Net Revenue − Cost
 
 #### Step 8: Visualization
 
 #### Charts created using PROC SGPLOT macros.
-
 ##### Examples:
-
 ##### 1.Revenue by Product
-
 ##### 2.Profit by Product
-
 ##### 3.Sales distribution
 
-##### 3. Linear Sales Analysis Project
+### Linear Sales Analysis Project
+-------------------------------------
 
 ### File: Sales data Analysis linear.sas
+------------------------------------------
 
 ### Objective
-
+---------------
 ##### Perform the same analysis using standard SAS programming without macros.
 
 ### Workflow
-
+-------------------
 ##### 1.Import dataset using PROC IMPORT
 
 ##### 2.Inspect dataset with PROC CONTENTS
@@ -210,7 +207,7 @@
 ##### 8.Perform analysis
 
 ### Key Business Insights Generated
-
+---------------------------------------
 ##### The project enables businesses to understand:
 
 ##### 1.Product performance
@@ -226,7 +223,7 @@
 ##### This helps management make data-driven decisions related to pricing, promotions, and product strategy.
 
 ### Conclusion
-
+---------------------
 ##### This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both ##### linear programming and macro-based dynamic programming, the project highlights how automation can significantly improve efficiency, ##### maintainability, and scalability in data analytics workflows.
 
 ##### The macro utility library developed in this project can be reused for future analytical projects, making the workflow faster and ##### more standardized.
