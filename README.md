@@ -4,8 +4,8 @@
 ## Sales Data Analysis Using SAS
 ----------------------------------
 
-#### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical #### handling of missing values, and visualization.
-#### The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across #### different products and sales channels.
+#### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical handling of missing values, and visualization.
+#### The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across  different products and sales channels.
 
 ## Two different approaches were implemented:
 ----------------------------------------------
@@ -39,11 +39,11 @@
 
 ## Project Components
 ----------------------------------
-### 1. Macro Utility Library 
+### Component 1 : Macro Utility Library 
 ### File : (MacroUtility.sas)
 #### This module contains reusable SAS macros designed to automate common data analysis tasks.
 
-## Purpose
+### Purpose
 -----------------
 #### To create a centralized macro library that simplifies SAS coding and allows repetitive procedures to be executed dynamically.
 
@@ -92,7 +92,7 @@
 #### Example:
 #### %Plotting(Sales_Data, VBAR Product_Name / Response=Revenue,"Product, "Revenue","Revenue by Product");
 
-## 2. Dynamic Sales Analysis Project
+## Coponent 2 : Dynamic Sales Analysis Project
 -----------------------------------
 
 ### File: Sale Data Analysis Dynamic.sas
@@ -158,8 +158,8 @@
 #### 2. Profit by Product
 #### 3. Sales distribution
 
-## 3. Linear Sales Analysis Project
--------------------------------------
+## Component 3 : Linear Sales Analysis Project
+------------------------------------
 
 ### File: Sales data Analysis linear.sas
 ------------------------------------------
