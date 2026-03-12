@@ -6,6 +6,7 @@
 ##### The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across ##### different products and sales channels.
 
 ### Two different approaches were implemented:
+----------------------------------------------
 
 ##### 1.Linear Programming Approach
 
