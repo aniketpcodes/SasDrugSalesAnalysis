@@ -85,7 +85,7 @@
 ##### %Medreplace(Sales_Base,Sales_Median,Median,Product_Name,Units_Sold Unit_Price);
 
 ### 7. Title Macro
-#####Creates standardized report titles.
+##### Creates standardized report titles.
 
 ##### Example:
 ##### %Title("Sales Analysis","Product Performance Report");
@@ -94,11 +94,7 @@
 ##### Creates dynamic charts using PROC SGPLOT.
 
 ##### Example:
-##### %Plotting(Sales_Data,
-#####        VBAR Product_Name / Response=Revenue,
-#####       "Product",
-#####        "Revenue",
-#####       "Revenue by Product");
+##### %Plotting(Sales_Data, VBAR Product_Name / Response=Revenue,"Product, "Revenue","Revenue by Product");
 
 ##### 2. Dynamic Sales Analysis Project
 
@@ -211,14 +207,6 @@
 ##### 7.Create derived variables
 
 ##### 8.Perform analysis
-
-### Key Difference from Dynamic Version
-
-#### Linear Approach				         Dynamic Approach
-##### Hard-coded procedures	    Macro driven automation
-##### Less reusable				          Highly reusable
-##### More repetitive code		    Reduced code duplication
-##### Less scalable				         Easily scalable
 
 ### Key Business Insights Generated
 
