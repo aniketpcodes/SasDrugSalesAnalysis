@@ -17,19 +17,17 @@
 
 ### The analysis pipeline includes:
 -------------------------------------
-##### 1.Importing raw CSV sales data
-##### 2.Cleaning and standardizing inconsistent data
-##### 3.Handling missing values using statistical methods
-##### 4.Creating derived variables like Revenue, Discount Amount, Net Revenue, and Cost per Unit
-##### 5.orting and organizing datasets
-##### 6.Generating business summaries
-##### 7.Producing graphical visualizations using PROC SGPLOT
+##### 1. Importing raw CSV sales data
+##### 2. Cleaning and standardizing inconsistent data
+##### 3. Handling missing values using statistical methods
+##### 4. Creating derived variables like Revenue, Discount Amount, Net Revenue, and Cost per Unit
+##### 5. Sorting and organizing datasets
+##### 6. Generating business summaries
+##### 7. Producing graphical visualizations using PROC SGPLOT
 #### Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
 
 ## Tools & Technologies Used
 ---------------------------------
-### Tool							            Purpose
-##### SAS Programming :-			   Core data processing and analysis
 ##### SAS Macros		:-		       Automation and reusable code
 ##### PROC IMPORT		:-		      Import raw datasets
 ##### PROC CONTENTS		:-		    Inspect dataset structure
