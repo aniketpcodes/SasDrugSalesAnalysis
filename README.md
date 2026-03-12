@@ -9,9 +9,9 @@
 
 ### Two different approaches were implemented:
 ----------------------------------------------
-##### 1.Linear Programming Approach
+##### 1. Linear Programming Approach
 
-##### 2.Dynamic Macro-Driven Approach
+##### 2. Dynamic Macro-Driven Approach
 
 #### The macro-driven approach improves automation, reusability, and efficiency by allowing repetitive analytical tasks to be executed using parameterized macros.
 
@@ -39,7 +39,8 @@
 
 ### Project Components
 ----------------------------------
-## 1. Macro Utility Library (MacroUtility.sas)
+## 1. Macro Utility Library 
+### File : (MacroUtility.sas)
 ##### This module contains reusable SAS macros designed to automate common data analysis tasks.
 
 ## Purpose
