@@ -1,42 +1,273 @@
-# Sales Data Analysis Using SAS
+# Project Summary
+ 
+## Sales Data Analysis Using SAS
 
-## Project Overview
+###### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical handling of missing values, and visualization.
 
-##### This project presents a comprehensive sales data analysis using SAS, aimed at identifying key business insights related to product performance, regional sales trends, and revenue generation. The analysis transforms raw transactional sales data into meaningful information through statistical techniques and data visualization.
+###### The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across different products and sales channels.
 
-##### Using SAS programming, the project evaluates how different products perform across multiple regions and sales channels. It highlights patterns in revenue generation, profitability, and sales volume while demonstrating how analytical methods can support data-driven business decisions. The final output includes structured analytical reports and visual insights that help interpret sales performance and market behavior. 
+### Two different approaches were implemented:
+
+##### 1.Linear Programming Approach
+
+##### 2.Dynamic Macro-Driven Approach
+
+##### The macro-driven approach improves automation, reusability, and efficiency by allowing repetitive analytical tasks to be executed using parameterized macros.
+
+##### The analysis pipeline includes:
+
+##### Importing raw CSV sales data
+
+##### Cleaning and standardizing inconsistent data
+
+##### Handling missing values using statistical methods
+
+##### Creating derived variables like Revenue, Discount Amount, Net Revenue, and Cost per Unit
+
+##### Sorting and organizing datasets
+
+##### Generating business summaries
+
+##### Producing graphical visualizations using PROC SGPLOT
+
+##### Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
+
+### Tools & Technologies Used
+
+##### Tool							Purpose
+##### SAS Programming			 Core data processing and analysis
+##### SAS Macros				 Automation and reusable code
+##### PROC IMPORT				 Import raw datasets
+##### PROC CONTENTS				 Inspect dataset structure
+##### PROC SORT				     Sort datasets
+##### PROC STDIZE				 Replace missing values using statistical methods
+##### PROC FORMAT				 Custom currency formatting (₹)
+##### PROC PRINT				 Dataset display
+##### PROC SGPLOT				 Data visualization
 
 
-## Dataset Overview
+### Project Components
 
-##### The dataset contains detailed sales transaction records including information about sales representatives, product names, regions, sales channels, transaction dates, unit prices, costs, discounts, and the number of units sold. These variables enable a detailed evaluation of revenue and profit generation across different products and geographic markets.
 
-##### Before performing the analysis, the dataset was cleaned and structured to ensure consistency and reliability in the results.
+##### 1. Macro Utility Library (MacroUtility.sas)
 
-## Analysis Performed
+##### This module contains reusable SAS macros designed to automate common data analysis tasks.
 
-##### The project includes several analytical components designed to understand sales performance from multiple perspectives.
+### Purpose
 
-##### Product performance analysis was conducted to identify the products generating the highest revenue and profit. Transaction distribution analysis was used to evaluate how frequently different products were sold across regions.
+##### To create a centralized macro library that simplifies SAS coding and allows repetitive procedures to be executed dynamically.
 
-##### Revenue analysis examined overall revenue generation and monthly trends to identify periods of strong sales activity. Regional analysis provided insights into which geographic markets contributed the most to total revenue.
+##### Available Macros
 
-##### Profitability analysis helped determine the most profitable products and regions, while correlation analysis explored the relationship between units sold, revenue, and profit. The results indicate a strong positive relationship between sales volume and financial performance.
+##### 1. Import Macro
 
-## Data Visualization
+##### Imports datasets of various file formats.
 
-##### To clearly communicate insights, the project incorporates multiple graphical representations such as bar charts, line charts, pie charts, and scatter plots. These visualizations highlight product performance, regional contributions, revenue trends, and the relationships between sales variables.
+##### Parameters:
 
-## Tools and Technologies
+##### Dataset – File path
 
-##### The analysis was implemented using SAS programming within the SAS Studio environment, utilizing statistical procedures and graphical reporting tools to generate analytical results.
+##### filetype – Format (CSV, XLSX etc.)
 
-## Key Insights
+##### Outname – Output dataset name
 
-##### The analysis reveals that certain products consistently outperform others in terms of both revenue and profit. Regional comparisons show significant differences in sales contributions, indicating varying levels of market demand across geographic areas.
+##### Des – Whether dataset has column names
 
-##### Monthly revenue analysis demonstrates fluctuations in sales performance, while correlation analysis confirms that increased units sold strongly influence both revenue and profitability.
+##### Des2 – Number of rows used to guess variable types
 
-## Conclusion
+#####Example:
 
-##### This project demonstrates how SAS can be effectively used for business analytics and sales performance evaluation. By applying statistical analysis and visualization techniques, the project provides valuable insights into product demand, regional market performance, and revenue trends, supporting more informed business decisions.
+##### %Import("sales.csv",CSV,Sales_Data,Yes,Max);
+
+##### 2. Contents Macro
+
+##### Displays metadata of the dataset.
+
+##### Example:
+
+##### %contents(Sales_Data);
+
+##### 3. Print Macro
+
+##### Prints dataset with custom variables and formatting.
+
+##### Example:
+
+#####%Print(Sales_Data,,Revenue Net_Revenue,,Sales Report,Generated by SAS);
+
+##### 4. Median Replacement Macro (Medreplace)
+
+##### Handles missing values using PROC STDIZE.
+
+##### Example:
+
+##### %Medreplace(Sales_Base,Sales_Median,Median,Product_Name,Units_Sold Unit_Price);
+
+##### 7. Title Macro
+
+#####Creates standardized report titles.
+
+##### Example:
+
+##### %Title("Sales Analysis","Product Performance Report");
+
+##### 8. Plotting Macro
+
+##### Creates dynamic charts using PROC SGPLOT.
+
+#####Example:
+
+##### %Plotting(Sales_Data,
+#####        VBAR Product_Name / Response=Revenue,
+#####       "Product",
+#####        "Revenue",
+#####       "Revenue by Product");
+
+##### 2. Dynamic Sales Analysis Project
+
+##### File:
+
+##### Sale Data Analysis Dynamic.sas
+
+### Objective
+
+##### To perform sales analysis using automated macros for better scalability and reusability.
+
+### Workflow
+
+##### Step 1: Macro Library Connection
+
+##### options sasautos=("/home/.../Macros");
+
+##### Allows SAS to access custom macros.
+
+##### Step 2: Data Import
+
+##### %Import("drug_sales_final_requested.csv",CSV,Sale_Data,Yes,Max);
+
+##### Loads raw sales dataset.
+
+##### Step 3: Dataset Inspection
+
+##### %contents(Sale_Data);
+
+##### Identifies variable types and data issues.
+
+##### Step 4: Data Cleaning
+
+##### Key cleaning steps:
+
+##### Standardized text using PROPERCASE
+
+##### Created new sequential Sale_ID
+
+##### Converted character variables to numeric
+
+##### Converted date formats
+
+##### Replaced missing Sales Rep with "Unknown"
+
+##### Standardized discount values
+
+
+
+##### Sorting required before statistical processing.
+
+##### Step 5: Missing Value Treatment
+
+##### Using median replacement:
+
+##### %Medreplace(Sales_Base,Sales_Median,Median,Product_Name,Units_Sold Unit_Price);
+
+##### Step 6: Derived Variables
+
+##### New business variables created:
+
+##### Revenue
+
+##### Discount Amount
+
+##### Net Revenue
+
+##### Cost per Unit
+
+##### Profit
+
+##### Example formula:
+
+##### Revenue = Units_Sold × Unit_Price
+
+##### Net Revenue = Revenue − Discount Amount
+
+##### Profit = Net Revenue − Cost
+
+##### Step 8: Visualization
+
+#### Charts created using PROC SGPLOT macros.
+
+##### Examples:
+
+##### Revenue by Product
+
+##### Profit by Product
+
+##### Sales distribution
+
+##### 3. Linear Sales Analysis Project
+
+##### File:
+
+##### Sales data Analysis linear.sas
+
+### Objective
+
+##### Perform the same analysis using standard SAS programming without macros.
+
+### Workflow
+
+##### 1.Import dataset using PROC IMPORT
+
+##### 2.Inspect dataset with PROC CONTENTS
+
+##### 3.Apply custom rupee format
+
+##### 4.Perform data cleaning
+
+##### 5.Sort dataset
+
+##### 6.Replace missing values using PROC STDIZE
+
+##### 7.Create derived variables
+
+##### 8.Perform analysis
+
+### Key Difference from Dynamic Version
+
+##### Linear Approach				 Dynamic Approach
+
+ ##### Hard-coded procedures		Macro driven automation
+##### Less reusable				    Highly reusable
+##### More repetitive code		    Reduced code duplication
+##### Less scalable				    Easily scalable
+
+### Key Business Insights Generated
+
+##### The project enables businesses to understand:
+
+##### 1.Product performance
+
+##### 2.Revenue generation patterns
+
+##### 3.Discount impact on sales
+
+##### 4.Profitability across products
+
+##### 5.Sales trends by region and channel
+
+##### This helps management make data-driven decisions related to pricing, promotions, and product strategy.
+
+### Conclusion
+
+##### This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both linear programming and macro-based dynamic programming, the project highlights how automation can significantly improve efficiency, maintainability, and scalability in data analytics workflows.
+
+##### The macro utility library developed in this project can be reused for future analytical projects, making the workflow faster and more standardized.
