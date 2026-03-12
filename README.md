@@ -1,4 +1,4 @@
-# <u> Project Summary </u>
+# Project Summary 
  
 ## Sales Data Analysis Using SAS
 
