@@ -9,9 +9,9 @@
 
 ## Two different approaches were implemented:
 ----------------------------------------------
-### 1. Linear Programming Approach
+#### 1. Linear Programming Approach
 
-### 2. Dynamic Macro-Driven Approach
+#### 2. Dynamic Macro-Driven Approach
 
 #### The macro-driven approach improves automation, reusability, and efficiency by allowing repetitive analytical tasks to be executed using parameterized macros.
 
