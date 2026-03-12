@@ -98,7 +98,7 @@
 
 ##### 2. Dynamic Sales Analysis Project
 
-##### File: Sale Data Analysis Dynamic.sas
+### File: Sale Data Analysis Dynamic.sas
 
 ### Objective
 
@@ -184,7 +184,7 @@
 
 ##### 3. Linear Sales Analysis Project
 
-##### File: Sales data Analysis linear.sas
+### File: Sales data Analysis linear.sas
 
 ### Objective
 
