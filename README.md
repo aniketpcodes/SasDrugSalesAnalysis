@@ -90,9 +90,10 @@
 #### Creates dynamic charts using PROC SGPLOT.
 
 #### Example:
-#### %Plotting(Sales_Data, VBAR Product_Name / Response=Revenue,"Product, "Revenue","Revenue by Product");
+#### %Plotting(Sales_Data,&Topic,"Product, "Revenue","Revenue by Product");
+#### &Topic refres to the Opertion you want to perform in the Sgplot example : HBAR , VBAR , SCATTER , SERIES , etc.
 
-## Coponent 2 : Dynamic Sales Analysis Project
+## Component 2 : Dynamic Sales Analysis Project
 -----------------------------------
 
 ### File: Sale Data Analysis Dynamic.sas
@@ -172,7 +173,7 @@
 -------------------
 #### 1. Import dataset using PROC IMPORT
 #### 2. Inspect dataset with PROC CONTENTS
-####  3. Apply custom rupee format
+#### 3. Apply custom rupee format
 #### 4. Perform data cleaning
 #### 5. Sort dataset
 #### 6. Replace missing values using PROC STDIZE
@@ -192,6 +193,6 @@
 
 ## Conclusion
 ---------------------
-#### This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both #### linear programming and macro-based dynamic programming, the project highlights how automation can significantly improve efficiency, #### maintainability, and scalability in data analytics workflows.
+#### This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both  linear programming and macro-based dynamic programming, the project highlights how automation can significantly improve efficiency,maintainability, and scalability in data analytics workflows.
 
 ##### The macro utility library developed in this project can be reused for future analytical projects, making the workflow faster and ##### more standardized.
