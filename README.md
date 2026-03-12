@@ -2,9 +2,7 @@
  
 ## Sales Data Analysis Using SAS
 
-###### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the 
-##### project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, 
-##### transformation, statistical handling of missing values, and visualization.
+##### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical handling of missing values, and visualization.
 
 ###### The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across ##### different products and sales channels.
 
@@ -66,7 +64,7 @@
 ##### Des – Whether dataset has column names
 ##### Des2 – Number of rows used to guess variable types
 
-#####Example:
+##### Example:
 ##### %Import("sales.csv",CSV,Sales_Data,Yes,Max);
 
 ### 2. Contents Macro
@@ -96,7 +94,7 @@
 ### 8. Plotting Macro
 ##### Creates dynamic charts using PROC SGPLOT.
 
-#####Example:
+##### Example:
 ##### %Plotting(Sales_Data,
 #####        VBAR Product_Name / Response=Revenue,
 #####       "Product",
