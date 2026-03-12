@@ -170,7 +170,7 @@ options sasautos=("/home/.../Macros");
 #### 2. Profit by Product
 #### 3. Sales distribution
 
- ## GRAPH EXAMPLE
+ ## Chart Example :
 
 <img width="549" height="414" alt="Contribution" src="https://github.com/user-attachments/assets/074a935d-70c6-472d-8f75-9ff27a3d4c12" />
 
