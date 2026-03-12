@@ -169,6 +169,10 @@ options sasautos=("/home/.../Macros");
 #### 1. Revenue by Product
 #### 2. Profit by Product
 #### 3. Sales distribution
+ 
+<img width="549" height="414" alt="Contribution" src="https://github.com/user-attachments/assets/074a935d-70c6-472d-8f75-9ff27a3d4c12" />
+
+<img width="583" height="418" alt="Revenue analysis" src="https://github.com/user-attachments/assets/38dc80bb-d9ef-4227-b98f-755debcb6984" />
 
 ## Component 3 : Linear Sales Analysis Project
 ------------------------------------
