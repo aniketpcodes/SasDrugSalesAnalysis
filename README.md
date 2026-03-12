@@ -25,7 +25,7 @@
 
 ##### Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
 
-### Tools & Technologies Used
+### <u>Tools & Technologies Used</u>
 
 ### Tool							            Purpose
 ##### SAS Programming			   Core data processing and analysis
