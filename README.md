@@ -15,7 +15,7 @@
 
 #### The macro-driven approach improves automation, reusability, and efficiency by allowing repetitive analytical tasks to be executed using parameterized macros.
 
-#### The analysis pipeline includes:
+### The analysis pipeline includes:
 -------------------------------------
 ##### 1.Importing raw CSV sales data
 ##### 2.Cleaning and standardizing inconsistent data
@@ -26,18 +26,18 @@
 ##### 7.Producing graphical visualizations using PROC SGPLOT
 #### Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
 
-### Tools & Technologies Used
+## Tools & Technologies Used
 ---------------------------------
 ### Tool							            Purpose
-##### SAS Programming			   Core data processing and analysis
-##### SAS Macros				       Automation and reusable code
-##### PROC IMPORT				      Import raw datasets
-##### PROC CONTENTS				    Inspect dataset structure
-##### PROC SORT				        Sort datasets
-##### PROC STDIZE				      Replace missing values using statistical methods
-##### PROC FORMAT				      Custom currency formatting (₹)
-##### PROC PRINT				       Dataset display
-##### PROC SGPLOT				      Data visualization
+##### SAS Programming :-			   Core data processing and analysis
+##### SAS Macros		:-		       Automation and reusable code
+##### PROC IMPORT		:-		      Import raw datasets
+##### PROC CONTENTS		:-		    Inspect dataset structure
+##### PROC SORT		:-		        Sort datasets
+##### PROC STDIZE			:-      Replace missing values using statistical methods
+##### PROC FORMAT			:-	      Custom currency formatting (₹)
+##### PROC PRINT				:-       Dataset display
+##### PROC SGPLOT				:-      Data visualization
 
 
 ### Project Components
@@ -53,7 +53,6 @@
 ##### Available Macros
 ---------------------------
 ### 1. Import Macro
-
 ##### Imports datasets of various file formats.
 
 #### Parameters:
@@ -96,7 +95,7 @@
 ##### Example:
 ##### %Plotting(Sales_Data, VBAR Product_Name / Response=Revenue,"Product, "Revenue","Revenue by Product");
 
-### Dynamic Sales Analysis Project
+## Dynamic Sales Analysis Project
 -----------------------------------
 
 ### File: Sale Data Analysis Dynamic.sas
@@ -130,19 +129,19 @@
 
 ##### Key cleaning steps:
 
-##### i.Standardized text using PROPERCASE
+##### i. Standardized text using PROPERCASE
 
-##### ii.Created new sequential Sale_ID
+##### ii. Created new sequential Sale_ID
 
-##### iii.Converted character variables to numeric
+##### iii. Converted character variables to numeric
 
-##### iv.Converted date formats
+##### iv. Converted date formats
 
-##### v.Replaced missing Sales Rep with "Unknown"
+##### v. Replaced missing Sales Rep with "Unknown"
 
-##### vi.Standardized discount values
+##### vi. Standardized discount values
 
-##### Vii.Sorting required before statistical processing.
+##### Vii. Sorting required before statistical processing.
 
 ##### Step 5: Missing Value Treatment
 
@@ -152,33 +151,33 @@
 
 #### Step 6: Derived Variables
 
-##### 1.New business variables created:
+##### 1. New business variables created:
 
-##### 2.Revenue
+##### 2. Revenue
 
-##### 3.Discount Amount
+##### 3. Discount Amount
 
-##### 4.Net Revenue
+##### 4. Net Revenue
 
-##### 5.Cost per Unit
+##### 5. Cost per Unit
 
-##### 6.Profit
+##### 6. Profit
 
 ##### Example formula:
 
-##### i.Revenue = Units_Sold × Unit_Price
-##### ii.Net Revenue = Revenue − Discount Amount
-##### iii.Profit = Net Revenue − Cost
+##### i. Revenue = Units_Sold × Unit_Price
+##### ii. Net Revenue = Revenue − Discount Amount
+##### iii. Profit = Net Revenue − Cost
 
 #### Step 8: Visualization
 
 #### Charts created using PROC SGPLOT macros.
 ##### Examples:
-##### 1.Revenue by Product
-##### 2.Profit by Product
-##### 3.Sales distribution
+##### 1. Revenue by Product
+##### 2. Profit by Product
+##### 3. Sales distribution
 
-### Linear Sales Analysis Project
+## Linear Sales Analysis Project
 -------------------------------------
 
 ### File: Sales data Analysis linear.sas
@@ -190,39 +189,39 @@
 
 ### Workflow
 -------------------
-##### 1.Import dataset using PROC IMPORT
+##### 1. Import dataset using PROC IMPORT
 
-##### 2.Inspect dataset with PROC CONTENTS
+##### 2. Inspect dataset with PROC CONTENTS
 
-##### 3.Apply custom rupee format
+##### 3. Apply custom rupee format
 
-##### 4.Perform data cleaning
+##### 4. Perform data cleaning
 
-##### 5.Sort dataset
+##### 5. Sort dataset
 
-##### 6.Replace missing values using PROC STDIZE
+##### 6. Replace missing values using PROC STDIZE
 
-##### 7.Create derived variables
+##### 7. Create derived variables
 
-##### 8.Perform analysis
+##### 8. Perform analysis
 
-### Key Business Insights Generated
+## Key Business Insights Generated
 ---------------------------------------
 ##### The project enables businesses to understand:
 
-##### 1.Product performance
+##### 1. Product performance
 
-##### 2.Revenue generation patterns
+##### 2. Revenue generation patterns
 
-##### 3.Discount impact on sales
+##### 3. Discount impact on sales
 
-##### 4.Profitability across products
+##### 4. Profitability across products
 
-##### 5.Sales trends by region and channel
+##### 5. Sales trends by region and channel
 
 ##### This helps management make data-driven decisions related to pricing, promotions, and product strategy.
 
-### Conclusion
+## Conclusion
 ---------------------
 ##### This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both ##### linear programming and macro-based dynamic programming, the project highlights how automation can significantly improve efficiency, ##### maintainability, and scalability in data analytics workflows.
 
