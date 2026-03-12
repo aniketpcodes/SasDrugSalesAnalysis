@@ -191,6 +191,6 @@
 
 ## Conclusion
 ---------------------
-#### This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both  linear programming and macro-based dynamic programming, the project highlights how automation can significantly improve efficiency,maintainability, and scalability in data analytics workflows.
+#### This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both  linear programming and macro-based dynamic programming,the project highlights how automation can significantly improve efficiency,maintainability,and scalability in data analytics workflows.
 
 ##### The macro utility library developed in this project can be reused for future analytical projects, making the workflow faster and ##### more standardized.
