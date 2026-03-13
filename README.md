@@ -33,6 +33,7 @@
 #### PROC SORT		:-		        Sort datasets
 #### PROC STDIZE			:-      Replace missing values using statistical methods
 #### PROC FORMAT			:-	      Custom currency formatting (₹)
+#### PROC SQL      :-       Analysis of Dataset 
 #### PROC PRINT				:-       Dataset display
 #### PROC SGPLOT				:-      Data visualization
 
