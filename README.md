@@ -23,7 +23,7 @@
 #### 4. Creating derived variables like Revenue, Discount Amount, Net Revenue, and Cost per Unit
 #### 5. Sorting and organizing datasets
 #### 6. Generating business summaries
-#### 7. Producing graphical visualizations using PROC SGPLOT
+### 7. Producing graphical visualizations using PROC SGPLOT
 #### Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
 
 ## Tools & Technologies Used
