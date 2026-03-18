@@ -64,38 +64,38 @@ Additionally, a Macro Utility Library was developed to standardize frequently us
 ```sas
 %Import("sales.csv",CSV,Sales_Data,Yes,Max);
 ```
-### 2. Contents Macro
-#### Displays metadata of the dataset.
+ 2. Contents Macro
+  Displays metadata of the dataset.
 
-#### Example:
+  Example:
 ```sas
  %contents(Sales_Data);
 ```
-### 3. Print Macro
-#### Prints dataset with custom variables and formatting.
+ 3. Print Macro
+  Prints dataset with custom variables and formatting.
 
-#### Example:
+ Example:
 ```sas
 %Print(Sales_Data,,Revenue Net_Revenue,,Sales Report,);
 ```
-### 4. Median Replacement Macro (Medreplace)
-#### Handles missing values using PROC STDIZE.
+ 4. Median Replacement Macro (Medreplace)
+  Handles missing values using PROC STDIZE.
 
-#### Example:
+  Example:
 ```sas
  %Medreplace(Sales_Base,Sales_Median,Median,Product_Name,Units_Sold Unit_Price);
 ```
-### 7. Title Macro
-#### Creates standardized report titles.
+  5. Title Macro
+  Creates standardized report titles.
 
-#### Example:
+  Example:
 ```sas
  %Title("Sales Analysis","Product Performance Report");
 ```
-### 8. Plotting Macro
-#### Creates dynamic charts using PROC SGPLOT.
+  6. Plotting Macro
+  Creates dynamic charts using PROC SGPLOT.
 
-#### Example:
+  Example:
 ```sas
  %Plotting(Sales_Data,&Topic,"Product, "Revenue","Revenue by Product");
 ```
@@ -104,108 +104,108 @@ Additionally, a Macro Utility Library was developed to standardize frequently us
 ## Component 2 : Dynamic Sales Analysis Project
 -----------------------------------
 
-### File: Sale Data Analysis Dynamic.sas
+ File: Sale Data Analysis Dynamic.sas
 
 ## Objective
 ---------------------
-#### To perform sales analysis using automated macros for better scalability and reusability.
+  To perform sales analysis using automated macros for better scalability and reusability.
 
 ## Workflow
 -------------- 
-### Step 1: Macro Library Connection
+  Step 1: Macro Library Connection
 ```
 options sasautos=("/home/.../Macros");
 ```
-#### Allows SAS to access custom macros.
+ Allows SAS to access custom macros.
 
-#### Step 2: Data Import
+  Step 2: Data Import
 ```
  %Import("drug_sales_final_requested.csv",CSV,Sale_Data,Yes,Max);
 ```
-#### Loads raw sales dataset.
+ Loads raw sales dataset.
 
-#### Step 3: Dataset Inspection
+  Step 3: Dataset Inspection
 ```
  %contents(Sale_Data);
 ```
-#### Identifies variable types and data issues.
+  Identifies variable types and data issues.
 
-### Step 4: Data Cleaning
+  Step 4: Data Cleaning
 
-#### Key cleaning steps:
-#### i. Standardized text using PROPERCASE
-#### ii. Created new sequential Sale_ID
-#### iii. Converted character variables to numeric
-#### iv. Converted date formats
-#### v. Replaced missing Sales Rep with "Unknown"
-#### vi. Standardized discount values
-#### Vii. Sorting required before statistical processing.
+  Key cleaning steps:
+  i. Standardized text using PROPERCASE
+  ii. Created new sequential Sale_ID
+  iii. Converted character variables to numeric
+  iv. Converted date formats
+  v. Replaced missing Sales Rep with "Unknown"
+  vi. Standardized discount values
+  Vii. Sorting required before statistical processing.
 
-#### Step 5: Missing Value Treatment
+  Step 5: Missing Value Treatment
 
-#### Using median replacement:
+ Using median replacement:
 ```
 %Medreplace(Sales_Base,Sales_Median,Median,Product_Name,Units_Sold Unit_Price);
 ```
-### Step 6: Derived Variables
+  Step 6: Derived Variables
 
-#### 1. New business variables created:
-#### 2. Revenue
-#### 3. Discount Amount
-#### 4. Net Revenue
-##### 5. Cost per Unit
+ 1. New business variables created:
+ 2. Revenue
+ 3. Discount Amount
+ 4. Net Revenue
+ 5. Cost per Unit
 
-##### 6. Profit
+ 6. Profit
 
-##### Example formula:
+ Example formula:
 ```
  i. Revenue = Units_Sold × Unit_Price
  ii. Net Revenue = Revenue − Discount Amount
  iii. Profit = Net Revenue − Cost
 ```
-#### Step 8: Visualization
+ Step 8: Visualization
 
-### Charts created using PROC SGPLOT macros.
-#### Examples:
-#### 1. Revenue by Product
-#### 2. Profit by Product
-#### 3. Sales distribution
+ Charts created using PROC SGPLOT macros.
+ Examples:
+ 1. Revenue by Product
+ 2. Profit by Product
+ 3. Sales distribution
 
  ## Chart Example :
 
 <img width="549" height="414" alt="Contribution" src="https://github.com/user-attachments/assets/074a935d-70c6-472d-8f75-9ff27a3d4c12" />
 
 
-## Component 3 : Linear Sales Analysis Project
+ Component 3 : Linear Sales Analysis Project
 ------------------------------------
 
-### File: Sales data Analysis linear.sas
+ File: Sales data Analysis linear.sas
 
 ## Objective
 ---------------
-#### Perform the same analysis using standard SAS programming without macros.
+ Perform the same analysis using standard SAS programming without macros.
 
 ## Workflow
 -------------------
-#### 1. Import dataset using PROC IMPORT
-#### 2. Inspect dataset with PROC CONTENTS
-#### 3. Apply custom rupee format
-#### 4. Perform data cleaning
-#### 5. Sort dataset
-#### 6. Replace missing values using PROC STDIZE
-#### 7. Create derived variables
-#### 8. Perform analysis
+ 1. Import dataset using PROC IMPORT
+ 2. Inspect dataset with PROC CONTENTS
+ 3. Apply custom rupee format
+ 4. Perform data cleaning
+ 5. Sort dataset
+ 6. Replace missing values using PROC STDIZE
+ 7. Create derived variables
+ 8. Perform analysis
 
 ## Key Business Insights Generated
 ---------------------------------------
-##### The project enables businesses to understand:
+ The project enables businesses to understand:
 
-#### 1. Product performance
-#### 2. Revenue generation patterns
-#### 3. Discount impact on sales
-#### 4. Profitability across products
-#### 5. Sales trends by region and channel
-#### This helps management make data-driven decisions related to pricing, promotions, and product strategy.
+ 1. Product performance
+ 2. Revenue generation patterns
+ 3. Discount impact on sales
+ 4. Profitability across products
+ 5. Sales trends by region and channel
+ This helps management make data-driven decisions related to pricing, promotions, and product strategy.
 
 ## Conclusion
 ---------------------
