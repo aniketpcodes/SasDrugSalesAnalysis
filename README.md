@@ -7,6 +7,17 @@
 *This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical handling of missing values, and visualization.*
 *The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across  different products and sales channels*
 
+## Tools & Technologies Used
+---------------------------------
+ 1. PROC IMPORT		  :-		      Import raw datasets
+ 2. PROC CONTENTS		:-		    Inspect dataset structure
+ 3. PROC SORT	   	:-		        Sort datasets
+ 4. PROC STDIZE			:-       Replace missing values using statistical methods
+ 5. PROC FORMAT			:-	      Custom currency formatting (₹)
+ 6. PROC SQL      :-       Analysis of Dataset 
+ 7. PROC PRINT				:-       Dataset display
+ 8. PROC SGPLOT			:-      Data visualization
+
 ## Two different approaches were implemented:
 ----------------------------------------------
 *1. Linear Programming Approach*
@@ -24,20 +35,10 @@
 5. Sorting and organizing datasets
 6. Generating business summaries
 7. Producing graphical visualizations using PROC SGPLOT
+
 Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
 
-## Tools & Technologies Used
----------------------------------
- 1. PROC IMPORT		  :-		      Import raw datasets
- 2. PROC CONTENTS		:-		    Inspect dataset structure
- 3. PROC SORT	   	:-		        Sort datasets
- 4. PROC STDIZE			:-       Replace missing values using statistical methods
- 5. PROC FORMAT			:-	      Custom currency formatting (₹)
- 6. PROC SQL      :-       Analysis of Dataset 
- 7. PROC PRINT				:-       Dataset display
- 8. PROC SGPLOT			:-      Data visualization
-
-
+ 
 # Project Components
 ----------------------------------
 ## Component 1 : Macro Utility Library 
