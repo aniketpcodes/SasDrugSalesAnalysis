@@ -28,14 +28,14 @@ Additionally, a Macro Utility Library was developed to standardize frequently us
 
 ## Tools & Technologies Used
 ---------------------------------
-*PROC IMPORT		:-		      Import raw datasets
+ PROC IMPORT		:-		      Import raw datasets
  PROC CONTENTS		:-		    Inspect dataset structure
  PROC SORT		:-		        Sort datasets
- PROC STDIZE			:-      Replace missing values using statistical methods
+ PROC STDIZE			:-       Replace missing values using statistical methods
  PROC FORMAT			:-	      Custom currency formatting (₹)
  PROC SQL      :-       Analysis of Dataset 
  PROC PRINT				:-       Dataset display
- PROC SGPLOT				:-      Data visualization*
+ PROC SGPLOT				:-      Data visualization
 
 
 # Project Components
@@ -48,17 +48,17 @@ Additionally, a Macro Utility Library was developed to standardize frequently us
 -----------------
 *To create a centralized macro library that simplifies SAS coding and allows repetitive procedures to be executed dynamically.*
 
-### Available Macros
+# Available Macros
 ---------------------------
-### 1. Import Macro
-#### Imports datasets of various file formats.
+## 1. Import Macro
+ Imports datasets of various file formats.
 
-### Parameters:
-#### Dataset – File path
-#### filetype – Format (CSV, XLSX etc.)
-#### Outname – Output dataset name
-#### Des – Whether dataset has column names
-#### Des2 – Number of rows used to guess variable types
+## Parameters:
+ Dataset – File path
+ filetype – Format (CSV, XLSX etc.)
+ Outname – Output dataset name
+ Des – Whether dataset has column names
+ Des2 – Number of rows used to guess variable types
 
 #### Example:
 ```sas
@@ -99,7 +99,7 @@ Additionally, a Macro Utility Library was developed to standardize frequently us
 ```sas
  %Plotting(Sales_Data,&Topic,"Product, "Revenue","Revenue by Product");
 ```
-####  "&Topic" refres to the Graphs you want to plot in the Sgplot example : HBAR , VBAR , SCATTER , SERIES , etc.
+ "&Topic" refres to the Graphs you want to plot in the Sgplot example : HBAR , VBAR , SCATTER , SERIES , etc.
 
 ## Component 2 : Dynamic Sales Analysis Project
 -----------------------------------
@@ -209,5 +209,5 @@ options sasautos=("/home/.../Macros");
 
 ## Conclusion
 ---------------------
-#### This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both  linear programming and macro-based dynamic programming.
-#### The macro utility library developed in this project can be reused for future analytical projects, making the workflow faster and more standardized.
+*This project demonstrates the use of advanced SAS programming techniques to perform business data analysis. By implementing both  linear programming and macro-based dynamic programming.*
+#### The macro utility library developed in this project can be reused for future analytical projects, making the workflow faster and more standardized.*
