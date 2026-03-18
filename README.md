@@ -28,14 +28,14 @@ Additionally, a Macro Utility Library was developed to standardize frequently us
 
 ## Tools & Technologies Used
 ---------------------------------
- PROC IMPORT		:-		      Import raw datasets
- PROC CONTENTS		:-		    Inspect dataset structure
- PROC SORT		:-		        Sort datasets
- PROC STDIZE			:-       Replace missing values using statistical methods
- PROC FORMAT			:-	      Custom currency formatting (₹)
- PROC SQL      :-       Analysis of Dataset 
- PROC PRINT				:-       Dataset display
- PROC SGPLOT				:-      Data visualization
+ 1. PROC IMPORT		  :-		      Import raw datasets
+ 2. PROC CONTENTS		:-		    Inspect dataset structure
+ 3. PROC SORT	   	:-		        Sort datasets
+ 4. PROC STDIZE			:-       Replace missing values using statistical methods
+ 5. PROC FORMAT			:-	      Custom currency formatting (₹)
+ 6. PROC SQL      :-       Analysis of Dataset 
+ 7. PROC PRINT				:-       Dataset display
+ 8. PROC SGPLOT			:-      Data visualization
 
 
 # Project Components
