@@ -4,49 +4,49 @@
 ## Sales Data Analysis Using SAS
 ----------------------------------
 
-#### This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical handling of missing values, and visualization.
-#### The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across  different products and sales channels.
+*This project performs comprehensive sales data analysis on pharmaceutical sales data using SAS programming. The goal of the project is to transform raw transactional data into meaningful business insights by performing data import, cleaning, transformation, statistical handling of missing values, and visualization.
+The project analyzes important business metrics such as units sold, pricing, revenue generation, discounts, and net revenue across  different products and sales channels*
 
 ## Two different approaches were implemented:
 ----------------------------------------------
-#### 1. Linear Programming Approach
+*1. Linear Programming Approach*
 
-#### 2. Dynamic Macro-Driven Approach
+*2. Dynamic Macro-Driven Approach*
 
-#### The macro-driven approach improves automation, reusability, and efficiency by allowing repetitive analytical tasks to be executed using parameterized macros.
+*The macro-driven approach improves automation, reusability, and efficiency by allowing repetitive analytical tasks to be executed using parameterized macros*
 
 ### The analysis pipeline includes:
 -------------------------------------
 *1. Importing raw CSV sales data*
 *2. Cleaning and standardizing inconsistent data*
-#### 3. Handling missing values using statistical methods
-#### 4. Creating derived variables like Revenue, Discount Amount, Net Revenue, and Cost per Unit
-#### 5. Sorting and organizing datasets
-#### 6. Generating business summaries
-#### 7. Producing graphical visualizations using PROC SGPLOT
-#### Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.
+*3. Handling missing values using statistical methods*
+*4. Creating derived variables like Revenue, Discount Amount, Net Revenue, and Cost per Unit*
+*5. Sorting and organizing datasets*
+*6. Generating business summaries
+*7. Producing graphical visualizations using PROC SGPLOT
+*Additionally, a Macro Utility Library was developed to standardize frequently used SAS procedures and make the project scalable and reusable for future datasets.*
 
 ## Tools & Technologies Used
 ---------------------------------
-#### PROC IMPORT		:-		      Import raw datasets
-#### PROC CONTENTS		:-		    Inspect dataset structure
-#### PROC SORT		:-		        Sort datasets
-#### PROC STDIZE			:-      Replace missing values using statistical methods
-#### PROC FORMAT			:-	      Custom currency formatting (₹)
-#### PROC SQL      :-       Analysis of Dataset 
-#### PROC PRINT				:-       Dataset display
-#### PROC SGPLOT				:-      Data visualization
+*PROC IMPORT		:-		      Import raw datasets
+ PROC CONTENTS		:-		    Inspect dataset structure
+ PROC SORT		:-		        Sort datasets
+ PROC STDIZE			:-      Replace missing values using statistical methods
+ PROC FORMAT			:-	      Custom currency formatting (₹)
+ PROC SQL      :-       Analysis of Dataset 
+ PROC PRINT				:-       Dataset display
+ PROC SGPLOT				:-      Data visualization*
 
 
-## Project Components
+# Project Components
 ----------------------------------
-### Component 1 : Macro Utility Library 
-### File : (MacroUtility.sas)
-#### This module contains reusable SAS macros designed to automate common data analysis tasks.
+## Component 1 : Macro Utility Library 
+ *File : (MacroUtility.sas)*
+ *This module contains reusable SAS macros designed to automate common data analysis tasks.*
 
-### Purpose
+ ## Purpose
 -----------------
-#### To create a centralized macro library that simplifies SAS coding and allows repetitive procedures to be executed dynamically.
+*To create a centralized macro library that simplifies SAS coding and allows repetitive procedures to be executed dynamically.*
 
 ### Available Macros
 ---------------------------
