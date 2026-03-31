@@ -31,7 +31,7 @@ Data Sales_Base(drop=S_ID Region1 PCDT USD Sale_D Channel1 DCT);
 		Sales_Rep="Unknown";
 	Format Sales_Rep $8.;
 	Units_Sold=Input(Strip (USD), ?? 4.);
-	Format Units_sold 20.;
+	Format Units_Sold 20.;
 	Sale_Date=Input(Strip(Sale_D), ?? ANYDTDTE12.);
 	Format Sale_Date ddmmyy10.;
 	Channel=Propcase(Channel1);
@@ -127,23 +127,23 @@ run;
 
 *2.Frequency  Analysis;
 *Analysis of Total number of Transaction Per Product & Total number of Transaction Per Region by single tabulation Method;
-%Title("Total Number of Transaction analysis Per Product & Per Region","This section analyses Product wise total Number of Transaction Per Product And Total Number of Transaction in every region separately and the highest number of transaction occured for Antibio-Plus");
+*2.Frequency Analysis;
+%Title("Total Number of Transaction analysis Per Product & Per Region",
+       "This section analyses Product wise total Number of Transaction Per Product...");
 title4  h=10pt " ";
-title5  j=Center h=8pt color=Blue Bold "Frequency= Total Number of Trasaction , Percent= The Percentage of transaction in Total Transaction";
-run;
+title5  j=Center h=8pt color=Blue Bold "Frequency= Total Number of Transaction, Percent= ...";
 ods noproctitle;
 proc freq data=Sales_Derivation ;
 	tables Product_Name /nocum plots=freqplot(orient=Vertical) out=Sales_Freq;
-	*nocum = No cumulative frequency or sum , Plots = Plot a Frequency Curve in the Vertical orientation;
-run; 
+run;
 
 title;
-
 Title "Explanatory Table";
 data Sales_transaction_Product;
 	set Sales_Freq;
 	label count="Total Number of Transactions" percent="Percentage Contribution";
 run;
+
 
 proc print data=Sales_Transaction_Product noobs label;
 run;
@@ -320,7 +320,7 @@ run;
 %Title ( "Analysis of Net Profit Per Product Per Region","This section analyses and determines the total Profit obtained by each Product in each region and the Most Profitable Product in each region");
 
 proc sql;
-	Create Table Profit_analysis_Reg_Pdt as select REgion , Product_Name, 
+	Create Table Profit_analysis_Reg_Pdt as select Region , Product_Name, 
 		Sum(Profit) as Net_Profit Format=Rupee. from Sales_Derivation group by Region, 
 		Product_Name order by Region, Calculated Net_Profit desc;
 quit;

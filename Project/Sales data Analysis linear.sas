@@ -1,5 +1,5 @@
 /* Importing of Dataset */
-Proc import Datafile="/home/u64231588/Raw file/Drug sales Analysis/drug_sales_final_requested.csv" 
+Proc import Datafile="/home/u64231588/Raw file/Drug sales Analysis Raw/drug_sales_raw.csv" 
 		DBMS=CSV Out=Sales_Data replace;
 	Getnames=Yes;
 	Guessingrows=Max;
@@ -411,7 +411,7 @@ title3 j=Center h=8pt color=Black Bold "This section analyses and determines the
 the Most Profitable Product in each region  ";
 
 proc sql;
-	Create Table Profit_analysis_Reg_Pdt as select REgion , Product_Name, 
+	Create Table Profit_analysis_Reg_Pdt as select Region , Product_Name, 
 		Sum(Profit) as Net_Profit Format=Rupee. from Sales_Derivation group by Region, 
 		Product_Name order by Region, Calculated Net_Profit desc;
 quit;
