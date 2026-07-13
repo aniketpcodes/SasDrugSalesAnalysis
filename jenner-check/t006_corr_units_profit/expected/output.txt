@@ -1,0 +1,7 @@
+                          Correlation Analysis Between Units Sold with Net revenue and Profit                           
+
+   Pearson Correlation Coefficients, N = 30
+          Units_Sold
+--------  --------
+Net_Revenue   0.83869
+Profit     0.85731

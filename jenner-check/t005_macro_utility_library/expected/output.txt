@@ -1,0 +1,61 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: Sales_Data
+Observations:  30
+Variables:     9
+
+Variables (in alphabetical order):
+
+  #  Variable      Type    Len  Format  Label
+---  ------------  ----  -----  ------  -----
+  1  Channel       Char      8          
+  2  Discount_Pct  Char      2          
+  3  Product_Name  Char     12          
+  4  Region        Char      5          
+  5  Sales_Rep     Char      4          
+  6  Sale_Date     Char     10          
+  7  Sale_ID        Num      8          
+  8  Units_Sold     Num      8          
+  9  Unit_Price     Num      8          
+
+-------------------------------------------------------------------------------
+
+                                                 Median-replaced sample                                                 
+                                                                                                                        
+                          Units and price with missing values replaced by product-wise median                           
+
+
+Product_Name  Region  Units_Sold  Unit_Price
+------------  ------  ----------  ----------
+Antibio-Plus  East        483775     3914.96
+Antibio-Plus  East        358373     3914.96
+Antibio-Plus  North       220293     4059.53
+Coldcure      South       791032     3324.55
+Coldcure      South       443317     4578.99
+Coldcure      north       421763     4589.62
+Coldcure      West        192340     1538.02
+Coldcure      East        254363        2164
+Coldcure      South       448657     4578.99
+Coldcure      North       219315     1258.39
+Coldcure      South       234607     3324.55
+Coldcure      West        280702     1538.02
+Painrelief-X  SOUTH       243550     3432.64
+Painrelief-X  East        358476     1328.92
+Painrelief-X  South       841425     4466.54
+Painrelief-X  north       513413     4073.85
+Painrelief-X  East        453752     1328.92
+Painrelief-X  East        164092     1891.31
+Painrelief-X  East        106374     1891.31
+Painrelief-X  West        897772     2570.64
+Painrelief-X  SOUTH       734010     2722.98
+Painrelief-X  north       354691     4073.85
+Painrelief-X  SOUTH       735362     3432.64
+Vitaboost     East        730663     4937.93
+Vitaboost     South       484994     1148.34
+Vitaboost     West        345634      4835.9
+Vitaboost     East        425958     4937.93
+Vitaboost     North       395964     4972.54
+Vitaboost     West        711502      4835.9
+Vitaboost     East        274169     4937.93

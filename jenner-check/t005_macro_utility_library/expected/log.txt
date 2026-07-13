@@ -1,0 +1,39 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA Sales_Data
+
+NOTE: Processing inline DATALINES (30 lines)
+
+NOTE: Read 30 rows from DATALINES.
+NOTE: Wrote Sales_Data (30 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC CONTENTS data=Sales_Data
+
+NOTE: PROC CONTENTS completed: 30 observations, 9 variables
+NOTE: DATA Sales_Base
+
+
+NOTE: Read 30 rows from Sales_Data.
+NOTE: Wrote Sales_Base (30 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FORMAT library=WORK
+
+NOTE: PICTURE Rupee defined (1 ranges)
+NOTE: PROC SORT data=Sales_Base
+
+NOTE: Read 30 rows from Sales_Base.
+NOTE: Wrote Sales_Base (30 rows, 9 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC STDIZE data=Sales_Base
+
+NOTE: PROC STDIZE: Wrote 30 rows to Sales_Median
+NOTE: Option TITLE changed to Median-replaced sample.
+NOTE: Option TITLE2 changed to  .
+NOTE: Option TITLE3 changed to Units and price with missing values replaced by product-wise median.
+NOTE: PROC PRINT data=Sales_Median
+
+NOTE: PROC PRINT completed: 30 observations printed, 4 variables

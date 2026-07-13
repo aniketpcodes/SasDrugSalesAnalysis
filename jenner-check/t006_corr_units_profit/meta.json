@@ -1,0 +1,7 @@
+{
+  "bundle": "t006_corr_units_profit",
+  "source_file": "Project/Sales data Analysis linear.sas",
+  "source_blob_sha": "67b60e6858f1e22628727b845844482638675678",
+  "source_commit": "c7b6846c90177bd8e38a4f97f4dd2a0e6300a5a0",
+  "notes": "PROC CORR of Units_Sold against Net_Revenue and Profit (NOMISS NOSIMPLE NOPROB) \u2014 the VAR/WITH Pearson analysis from the linear script. Runs on Sales_Derivation from the shared cleaning preamble."
+}

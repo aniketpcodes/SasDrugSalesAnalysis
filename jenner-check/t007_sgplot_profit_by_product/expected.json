@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T04:01:28+00:00",
+  "_captured_run_id": "r_308dd121a9e84e5192e076df39322c58",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Table Performance_analysis created.",
+    "NOTE: PROC SGPLOT data=Performance_analysis",
+    "NOTE: Wrote Sales_Derivation (30 rows, 15 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

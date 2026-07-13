@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T04:01:28+00:00",
+  "_captured_run_id": "r_9a5817ee3b3b49438ff4091c692d2bd3",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DATA Sales_Derivation",
+    "NOTE: PROC CORR data=Sales_Derivation",
+    "NOTE: Wrote Sales_Derivation (30 rows, 15 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

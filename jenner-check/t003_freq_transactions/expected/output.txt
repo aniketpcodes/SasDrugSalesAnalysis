@@ -1,0 +1,37 @@
+                             Total Number of Transaction analysis Per Product & Per Region                              
+
+                                                   The FREQ Procedure
+
+Product_Name    Frequency    Percent
+-------------------------------------
+Antibio-Plus            3     10.00
+Coldcure                9     30.00
+Painrelief-X           11     36.67
+Vitaboost               7     23.33
+                             Total Number of Transaction analysis Per Product & Per Region                              
+
+
+  Obs  Product_Name  Total Number of Transactions  Percentage Contribution
+-----  ------------  ----------------------------  -----------------------
+    1  Antibio-Plus                             3                       10
+    2  Coldcure                                 9                       30
+    3  Painrelief-X                            11                    36.67
+    4  Vitaboost                                7                    23.33
+
+                            Total Number of Transaction analysis Per Product in each region                             
+
+                                                   The FREQ Procedure
+
+Table of Region by Product_Name
+
+Region |Antibio-Plus |    Coldcure |Painrelief-X |   Vitaboost |        Total
+-------+-------------+-------------+-------------+-------------+-------------
+East   |           2 |           1 |           4 |           3 |           10
+-------+-------------+-------------+-------------+-------------+-------------
+North  |           1 |           2 |           2 |           1 |            6
+-------+-------------+-------------+-------------+-------------+-------------
+South  |           0 |           4 |           4 |           1 |            9
+-------+-------------+-------------+-------------+-------------+-------------
+West   |           0 |           2 |           1 |           2 |            5
+-------+-------------+-------------+-------------+-------------+-------------
+Total  |           3 |           9 |          11 |           7 |           30

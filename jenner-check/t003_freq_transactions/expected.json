@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T04:01:28+00:00",
+  "_captured_run_id": "r_62e67348a1ec49ed96a6a5f1ef96330b",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Output dataset Sales_Freq has 4 observations and 3 variables.",
+    "NOTE: Wrote Sales_transaction_Product (4 rows, 3 columns).",
+    "NOTE: PROC PRINT completed: 4 observations printed, 3 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
