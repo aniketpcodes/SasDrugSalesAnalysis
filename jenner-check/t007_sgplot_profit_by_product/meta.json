@@ -1,0 +1,7 @@
+{
+  "bundle": "t007_sgplot_profit_by_product",
+  "source_file": "Project/Sales data Analysis linear.sas",
+  "source_blob_sha": "67b60e6858f1e22628727b845844482638675678",
+  "source_commit": "c7b6846c90177bd8e38a4f97f4dd2a0e6300a5a0",
+  "notes": "PROC SGPLOT HBAR of total Profit per product (built from a PROC SQL summary), grouped and styled as in the linear script. Produces PNG and SVG output."
+}

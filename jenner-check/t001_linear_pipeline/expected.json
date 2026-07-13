@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T04:01:28+00:00",
+  "_captured_run_id": "r_c12f1ae94e6d432785faab2a9385e18c",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote Sales_Derivation (30 rows, 15 columns).",
+    "NOTE: PROC STDIZE: Wrote 30 rows to Sales_Median",
+    "NOTE: PROC PRINT completed: 30 observations printed, 14 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

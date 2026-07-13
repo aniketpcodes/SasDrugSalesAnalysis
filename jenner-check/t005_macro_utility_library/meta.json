@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_macro_utility_library",
+  "source_file": "Macros/MacroUtlity.sas",
+  "source_blob_sha": "6cd0f73355812b5547f7c72d110ef4f95edd515f",
+  "source_commit": "c7b6846c90177bd8e38a4f97f4dd2a0e6300a5a0",
+  "notes": "Exercises the macro utility library (definitions verbatim): %contents, %Rupee, %Sorting, %Medreplace (PROC STDIZE), %Title and %Print, driven against the inline sample. %Import is defined in the library but the caller builds the dataset inline so the bundle stays self-contained."
+}

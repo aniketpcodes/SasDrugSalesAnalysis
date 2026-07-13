@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T04:01:28+00:00",
+  "_captured_run_id": "r_ee279943083c433aa86d84f8961318cc",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: PROC CONTENTS completed: 30 observations, 9 variables",
+    "NOTE: PROC STDIZE: Wrote 30 rows to Sales_Median",
+    "NOTE: PROC PRINT completed: 30 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

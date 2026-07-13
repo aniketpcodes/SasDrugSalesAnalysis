@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T04:01:28+00:00",
+  "_captured_run_id": "r_00eb14270f3f484ebb4d4f67ff943c58",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Table Performance_analysis created.",
+    "NOTE: Table Region_Revenue_analysis created.",
+    "NOTE: PROC PRINT completed: 4 observations printed, 2 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

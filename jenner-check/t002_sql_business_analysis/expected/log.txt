@@ -1,0 +1,54 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA Sales_Data
+
+NOTE: Processing inline DATALINES (30 lines)
+
+NOTE: Read 30 rows from DATALINES.
+NOTE: Wrote Sales_Data (30 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FORMAT library=WORK
+
+NOTE: PICTURE Rupee defined (1 ranges)
+NOTE: DATA Sales_Base
+
+
+NOTE: Read 30 rows from Sales_Data.
+NOTE: Wrote Sales_Base (30 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=Sales_Base
+
+NOTE: Read 30 rows from Sales_Base.
+NOTE: Wrote Sales_Base (30 rows, 9 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC STDIZE data=Sales_Base
+
+NOTE: PROC STDIZE: Wrote 30 rows to Sales_Median
+NOTE: DATA Sales_Derivation
+
+
+NOTE: Read 30 rows from Sales_Median.
+NOTE: Wrote Sales_Derivation (30 rows, 15 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Top Performing Product Analysis by Profit.
+NOTE: PROC SQL 
+
+NOTE: Table Performance_analysis created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=Performance_analysis
+
+NOTE: PROC PRINT completed: 4 observations printed, 2 variables
+NOTE: Option TITLE changed to Percentage Contribution of Net Revenue Per Region.
+NOTE: PROC SQL 
+
+NOTE: Table Region_Revenue_analysis created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=Region_Revenue_analysis
+
+NOTE: PROC PRINT completed: 4 observations printed, 3 variables

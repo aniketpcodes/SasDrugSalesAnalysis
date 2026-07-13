@@ -1,0 +1,7 @@
+                       Product wise Average Sale, Total Sales Per Product & Net Revenue Analysis                        
+
+Product Name  Mean Net Revenue  Total Revenue per Product
+Antibio-Plus   Rs 01,34,21,37,663   Rs 04,02,64,12,989      
+Coldcure       Rs 01,15,92,94,426   Rs 10,43,36,49,834      
+Painrelief-X   Rs 01,45,08,67,155   Rs 15,95,95,38,714      
+Vitaboost      Rs 01,99,98,32,025   Rs 13,99,88,24,176
